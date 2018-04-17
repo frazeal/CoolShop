@@ -1,0 +1,21 @@
+USE [DbCustomer]
+GO
+/****** Object:  Table [dbo].[tblCust]    Script Date: 07/08/2015 09:57:43 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[tblCust](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[CustomerName] [nvarchar](50) NULL,
+	[PhoneNumber] [nvarchar](50) NULL,
+	[BillAmount] [money] NULL,
+	[BillDate] [datetime] NULL,
+	[Address] [nvarchar](50) NULL,
+	[CustomerType] [nvarchar](50) NULL,
+ CONSTRAINT [PK_tblCust] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
