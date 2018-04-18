@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{F462C82B-622C-4506-AA6E-351CE66032B0}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
+    <ProjectGuid>{22A3BE9D-DA33-4195-8BB4-1ECA38FBC823}</ProjectGuid>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>WindowsCustomerUI</RootNamespace>
-    <AssemblyName>WindowsCustomerUI</AssemblyName>
+    <RootNamespace>ConsoleTest</RootNamespace>
+    <AssemblyName>ConsoleTest</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>Client</TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
@@ -34,81 +34,30 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="EntityFramework, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\EfDal\bin\Debug\EntityFramework.dll</HintPath>
-    </Reference>
-    <Reference Include="EntityFramework.SqlServer">
-      <HintPath>..\EfDal\bin\Debug\EntityFramework.SqlServer.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Transactions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Deployment" />
-    <Reference Include="System.Drawing" />
-    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
-    <None Include="App.config" />
-    <None Include="Properties\Settings.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
-    </None>
-    <Compile Include="Properties\Settings.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Settings.settings</DependentUpon>
-      <DesignTimeSharedInput>True</DesignTimeSharedInput>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\AbstractDal\AbstractDal.csproj">
-      <Project>{6EED2AF9-C939-4D63-88B6-FD5EFD523C95}</Project>
-      <Name>AbstractDal</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Facade\Facade.csproj">
-      <Project>{9DD70377-ABD8-4A1A-88AD-D64F171823E1}</Project>
-      <Name>Facade</Name>
-    </ProjectReference>
     <ProjectReference Include="..\FactoryCustomer\FactoryCustomer.csproj">
       <Project>{6026EB19-6229-44CC-876C-62541C2912BD}</Project>
       <Name>FactoryCustomer</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\FactoryDal\FactoryDal.csproj">
-      <Project>{9E5F3256-0557-4F0F-9852-0D0677C8D6C2}</Project>
-      <Name>FactoryDal</Name>
     </ProjectReference>
     <ProjectReference Include="..\ICustomerInterface\ICustomerInterface.csproj">
       <Project>{81209910-9603-4B5C-978A-D36746757E13}</Project>
       <Name>ICustomerInterface</Name>
     </ProjectReference>
-    <ProjectReference Include="..\IDal\IDal.csproj">
-      <Project>{2668F088-B663-4394-8B25-1C908B96A6F5}</Project>
-      <Name>IDal</Name>
+    <ProjectReference Include="..\Stratergy\Stratergy.csproj">
+      <Project>{B751E9B8-5D75-411A-8D3E-201033340AEE}</Project>
+      <Name>Stratergy</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

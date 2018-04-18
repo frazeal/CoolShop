@@ -69,6 +69,7 @@
             this.cmbCustomerType.Name = "cmbCustomerType";
             this.cmbCustomerType.Size = new System.Drawing.Size(146, 24);
             this.cmbCustomerType.TabIndex = 1;
+            this.cmbCustomerType.SelectedIndexChanged += new System.EventHandler(this.cmbCustomerType_SelectedIndexChanged);
             // 
             // label2
             // 
@@ -159,6 +160,7 @@
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(781, 250);
             this.dataGridView1.TabIndex = 12;
+            this.dataGridView1.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_RowEnter);
             // 
             // btnAdd
             // 
@@ -168,6 +170,7 @@
             this.btnAdd.TabIndex = 7;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnUpdate
             // 
@@ -195,6 +198,7 @@
             this.btnCancel.TabIndex = 16;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // comboRepository
             // 
@@ -206,6 +210,7 @@
             this.comboRepository.Name = "comboRepository";
             this.comboRepository.Size = new System.Drawing.Size(146, 24);
             this.comboRepository.TabIndex = 17;
+            this.comboRepository.SelectedIndexChanged += new System.EventHandler(this.comboRepository_SelectedIndexChanged);
             // 
             // btnValidate
             // 
@@ -215,6 +220,7 @@
             this.btnValidate.TabIndex = 18;
             this.btnValidate.Text = "Validate";
             this.btnValidate.UseVisualStyleBackColor = true;
+            this.btnValidate.Click += new System.EventHandler(this.btnValidate_Click);
             // 
             // Form1
             // 
@@ -242,6 +248,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Customer Screen";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
